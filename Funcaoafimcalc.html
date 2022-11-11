@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM - Matemática - Calculadora de função afim</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/scriptfa.js"></script>
+</head>
+<body>
+    <header class="Cab-m1">
+        <a href="./Index.html" class="Link-index">
+            <img src="./Imagens/Logo.png" alt="" class="Logo">
+        </a>
+        <h1>CAIO MATEMÁTICA</h1>
+    </header>
+
+    <main class="Calc-main">
+        <div class="Calculo">
+            <p>Essa calculadora calcula o valor de y referente a um valor de x,o zero da função e características do gráfico</p>
+            <div class="input">
+                <input type="number" id="a" placeholder="Digite o valor de a aqui">
+                <input type="number" id="b" placeholder="Digite o valor de b aqui">
+                <input type="number" id="x" placeholder="Atribua um valor a x">
+                <button onclick="Calcular()">Calcular</button>
+            </div>
+
+            <div class="output">
+                <p>Valor de y referente: <span id="y"></span> </p>
+                <p>Zero da função: <span id="zero"></span> </p>
+                <p>Reta: <span id="reta"></span> </p>
+                <p>Intersecção: <span id="interseccao"></span> </p>
+            </div>
+        </div>
+
+        <aside class="Calc-aside">
+            <a href="./FuncaoAfim.html">
+                <img src="./Imagens/Voltar.jpg" alt="">
+            </a>
+        </aside>
+    </main>
+
+    <footer class="rodape-m1">
+        <p>Caio e Daniel &copy 2022</p>
+</footer>
+</body>
+</html>
