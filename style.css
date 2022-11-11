@@ -31,10 +31,11 @@ a{
     font-family: 'Kanit', sans-serif;
     color: #fff;
 }
-#P-main,#Pm-main{
+#P-main,#Pm-main,.Con-main{
     width: 70%;
     margin-left: 15%;
-    display: flex;
+    display: flex;}
+#P-main,#Pm-main{
     align-items: center;
     justify-content: center;
 }
@@ -110,4 +111,30 @@ ul{
 }
 .Topicos li{
     margin-top: 5px;
+}
+.Art-con{
+    width: 60%;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 14px;
+    background: linear-gradient(to bottom,#aaa,#888);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+}
+.Art-con img{
+    width: 200px;
+    height: 200px;
+}
+.Con-aside{
+    width: 30%;
+    margin-left: 10%;
+}
+.Con-aside a,.Con-aside a img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
 }
