@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM - Matemática - Calculadora de função afim</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/scriptsn.js"></script>
+</head>
+<body>
+    <header class="Cab-m1">
+        <a href="./Index.html" class="Link-index">
+            <img src="./Imagens/Logo.png" alt="" class="Logo">
+        </a>
+        <h1>CAIO MATEMÁTICA</h1>
+    </header>
+
+    <main class="Calc-main">
+        <div class="Calculo">
+            <p>Essa calculadora calcula o valor de y referente a um valor de x,o zero da função e características do gráfico</p>
+            <div class="input">
+                <h3>PA</h3>
+                <input type="number" id="r" placeholder="Digite a razão da PA">
+                <input type="number" id="a1" placeholder="Digite o valor inicial">
+                <input type="number" id="n" placeholder="Digite o número de termos">
+                <button onclick="CalcularPA()">CalcularPA</button>
+                <h3>PG</h3>
+                <input type="number" id="q" placeholder="Digite a razão da PG">
+                <input type="number" id="Ga1" placeholder="Digite o valor inicial">
+                <input type="number" id="Gn" placeholder="Digite o número de termos">
+                <button onclick="CalcularPG()">CalcularPG</button>
+            </div>
+
+            <div class="output">
+                <h3>PA</h3>
+                <p>Último termo: <span id="Aan"></span> </p>
+                <p>Soma dos termos: <span id="ASn"></span> </p>
+                <h3>PG</h3>
+                <p>Último termo: <span id="Gan"></span> </p>
+                <p>Soma dos termos: <span id="GSn"></span> </p>
+                <p>Soma infinita dos termos: <span id="GS"></span></p>
+            </div>
+        </div>
+
+        <aside class="Calc-aside">
+            <a href="./Sequencias.html">
+                <img src="./Imagens/Voltar.jpg" alt="">
+            </a>
+        </aside>
+    </main>
+
+    <footer class="rodape-m1">
+        <p>Caio e Daniel &copy 2022</p>
+</footer>
+</body>
+</html>
