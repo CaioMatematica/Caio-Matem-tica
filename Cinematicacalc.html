@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM - Física - Calculadora de conceitos da Cinemática</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/scriptci.js"></script>
+</head>
+<body>
+    <header class="Cab-m1">
+        <a href="./Index.html" class="Link-index">
+            <img src="./Imagens/Logo.png" alt="" class="Logo">
+        </a>
+        <h1>CAIO MATEMÁTICA</h1>
+    </header>
+
+    <main class="Calc-main">
+        <div class="Calculo">
+            <p>Essa calculadora calcula alguns conceitos</p>
+            <div class="input">
+                <h3>Velocidade MU</h3>
+                <input type="number" id="eDS" placeholder="Digite a variação do espaço(m)" autofocus>
+                <input type="number" id="e1Dt" placeholder="Digite a variação do tempo(s)">
+                <button onclick="CalcularVeloMU()">Calcular V(MU)</button>
+
+                <h3>Função horária do espaço MU</h3>
+                <input type="number" id="e1S0" placeholder="Digite o espaço inicial(m)">
+                <input type="number" id="e1V" placeholder="Digite a velocidade(m/s)">
+                <input type="number" id="e1t" placeholder="Digite o tempo(s)">
+                <button onclick="CalcularEspMU()">Calcular S(MU)</button>
+
+                <h3>Aceleração</h3>
+                <input type="number" id="eDv" placeholder="Digite a variação da velocidade(m/s)">
+                <input type="number" id="e2Dt" placeholder="Digite a variação do tempo(s)">
+                <button onclick="Calcular_ace()">Calcular a</button>
+
+                <h3>Função horária do espaço MUV</h3>
+                <input type="number" id="e2S0" placeholder="Digite o espaço inicial(m)">
+                <input type="number" id="e1v0" placeholder="Digite a velocidade inicial(m/s)">
+                <input type="number" id="e1a" placeholder="Digite a aceleração(m/s²)">
+                <input type="number" id="e2t" placeholder="Digite o tempo(s)">
+                <button onclick="CalcularEspMUV()">Calcular S(MUV)</button>
+
+                <h3>Função horária da velocidade</h3>
+                
+                <input type="number" id="e2v0" placeholder="Digite a velocidade inicial(m/s)">
+                <input type="number" id="e2a" placeholder="Digite a aceleração(m/s²)">
+                <input type="number" id="e3t" placeholder="Digite o tempo(s)">
+                <button onclick="CalcularVeloMUV()">Calcular V(MUV)</button>
+            </div>
+
+            <div class="output">
+                <h3>Velocidade MU</h3>
+                <p>Velocidade: <span id="s1V">_______</span> </p>
+                <h3>Espaço(MU)</h3>
+                <p>Espaço: <span id="s1Espaco">_______</span> </p>
+                <h3>Aceleração</h3>
+                <p>Aceleração: <span id="sa">_______</span> </p>
+                <h3>Espaço(MUV)</h3>
+                <p>Espaço: <span id="s2S">_______</span></p>
+                <h3>Velocidade MUV</h3>
+                <p>Velocidade: <span id="s2V">_______</span></p>
+            </div>
+        </div>
+
+        <aside class="Calc-aside">
+            <a href="./Cinematica.html">
+                <img src="./Imagens/Voltar.jpg" alt="">
+            </a>
+        </aside>
+    </main>
+
+    <footer class="rodape-m1">
+        <p>Caio e Daniel &copy 2022</p>
+</footer>
+</body>
+</html>

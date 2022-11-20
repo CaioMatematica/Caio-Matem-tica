@@ -99,9 +99,17 @@ ul{
     font-size: 20px;
     border-radius: 10px;
 }
+.Pm-Conteudo summary a:hover{
+    color: #800;
+    text-decoration: underline;
+}
 .Pm-Conteudo[open] summary{
     background: linear-gradient(to bottom,#a00,#800);
     border-radius: 10px 10px 0 0;
+}
+.Pm-Conteudo[open] summary a:hover{
+    color: #008;
+    text-decoration: underline;
 }
 .Topicos{
     width: 100%;
@@ -167,7 +175,7 @@ ul{
     width: 50%;
 }
 .input button{
-    width: 12%;
+    width: 18%;
     height: 20px;
     border:none;
     cursor: pointer;

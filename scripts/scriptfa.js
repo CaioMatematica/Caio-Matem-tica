@@ -1,7 +1,7 @@
 function Calcular(){
     a = Number((document.getElementById('a')).value)
     if(a == 0){
-        window.alert('Desculpe o valor de a que você insetiu é inválido')
+        window.alert('Desculpe o valor de a que você inseriu é inválido')
     }
     else{
     b = Number((document.getElementById('b')).value)

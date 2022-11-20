@@ -25,7 +25,7 @@ function CalcularPG(){
     sGSn = document.getElementById('GSn')
     sGS = document.getElementById('GS')
 
-    sGan.innerHTML = `${an}`
-    sGSn.innerHTML = `${Sn}`
-    sGS.innerHTML = `${Si}`
+    sGan.innerHTML = `${an.ToFixed(2)}`
+    sGSn.innerHTML = `${Sn.ToFixed(2)}`
+    sGS.innerHTML = `${Si.ToFixed2}`
 }

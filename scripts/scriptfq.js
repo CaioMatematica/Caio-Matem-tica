@@ -28,7 +28,7 @@ function Calcular(){
         }
         interseccao = `Corta o eixo y no ponto ${c}`
         vx = ((-b)/(2*a)).toFixed(2)
-        vy = (-delta)/(4*a).toFixed(2)
+        vy = ((-delta)/(4*a)).toFixed(2)
         v = `(${vx},${vy})`
      
         sy = document.getElementById('y')
