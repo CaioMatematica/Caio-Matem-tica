@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM - Física - Calculadora de dinâmica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/scriptd.js"></script>
+</head>
+<body>
+    <header class="Cab-m1">
+        <a href="./Index.html" class="Link-index">
+            <img src="./Imagens/Logo.png" alt="" class="Logo">
+        </a>
+        <h1>CAIO MATEMÁTICA</h1>
+    </header>
+
+    <main class="Calc-main">
+        <div class="Calculo">
+            <p>Essa calculadora calcula a força resultante e o valor de algumas componentes</p>
+            <div class="input">
+                <h3>Força resultante</h3>
+                <input type="number" id="m" placeholder="Digite a massa do corpo(kg)" autofocus>
+                <input type="number" id="a" placeholder="Digite a aceleração do corpo(m/s²)">
+                <button onclick="CalcularFr()">Calcular Fr</button>
+                <h3>Componentes</h3>
+                <input type="number" id="F" placeholder="Digite o módulo da força">
+                <input type="number" id="ang" placeholder="Digite o ângulo da força">
+                <button onclick="CalcularComponentes()">Calcular</button>
+            </div>
+
+            <div class="output">
+                <h3>Força resultante</h3>
+                <p>Força resultante: <span id="Fr"></span> </p>
+                <h3>Componentes</h3>
+                <p>Componente em x: <span id="Fx"></span> </p>
+                <p>Componente em y: <span id="Fy"></span> </p>
+            </div>
+        </div>
+
+        <aside class="Calc-aside">
+            <a href="./LeisDeNewton.html">
+                <img src="./Imagens/Voltar.jpg" alt="">
+            </a>
+        </aside>
+    </main>
+
+    <footer class="rodape-m1">
+        <p>Caio e Daniel &copy 2022</p>
+</footer>
+</body>
+</html>
